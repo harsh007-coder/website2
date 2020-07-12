@@ -1,0 +1,297 @@
+*{
+font-family: 'Sahitya', serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+	
+}
+.heading{
+	height: 50px;
+	width: 100%;
+	background:  #001a33;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo{padding-left: 40px; }
+.logo h2{text-transform: capitalize;color:#fff;font-size:30px; }
+.lines{padding-right: 10px; }
+.lines a{color:#fff;text-decoration: none;font-size:35px}
+
+.cross{
+	width: 0px;
+	height: 100vh;
+	background:#001a33;
+	z-index: 10;
+	position: fixed;
+	transition: all 0.5s;
+overflow: hidden;
+	
+}
+.cross a{
+	
+	color: #fff;
+	display: block;
+	font-size: 25px;
+text-decoration: none;
+padding:30px 0 30px 20px ;
+
+}
+
+.closenav{position:absolute;
+top:0;right:25px;font-size: 30px;
+}
+
+.cross a:hover{
+	color: rgba(255, 255, 255, 0.8);
+
+}
+.top{
+	width: 100%;
+	height: 450px;
+	text-align: center;
+		background-image: url('../images/steve3.jpg');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		background-attachment:fixed ;
+
+}
+.top p{
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 10px;
+	color: white;
+	position:relative;
+	left: 0;
+	top: 0;
+	font-size: 50px;
+	text-transform: uppercase;
+	word-spacing: 3px;
+	/* animation:6s move infinite linear */
+	/* animation-direction: alternate; */
+	
+}
+@keyframes move{
+	0%{left: 0;}
+    40%{left: 35%;}
+	70%{left:75%;}
+	/* 100%{left:100%;} */
+}
+
+
+.top i{
+text-align:center;
+	color: white;
+	padding: 12px;
+	font-size: 30px;
+	cursor: pointer;
+	padding-left: 14px;
+	margin: 15px;
+}
+
+.top i:hover{
+	color:#0084ff ;
+	font-size: 50px;
+	background: none;
+
+}
+
+
+
+
+.top button{
+	margin-top: 20px;
+    padding: 20px;
+	background: linear-gradient(to right,blue,white);
+	font-size: 20px;
+	text-transform: capitalize;
+	border-radius: 10px;
+	outline: none;
+	border: none;
+
+}
+.top button:hover{
+	background: linear-gradient(to right,white,blue);
+}
+.image-slider{
+overflow: hidden;
+
+
+}
+.image-slider figure{
+	position: relative;
+	width: 500%;
+	margin:0px;
+	left: 0px;
+	animation: 12s slider infinite;
+}
+.image-slider figure img{
+	width: 20%;
+	float: left;
+
+}
+@keyframes slider{
+	0%{
+		left: 0;
+	}
+	20%{
+		left: 0;
+	}
+	25%{
+		left: -100%;
+	}
+
+   40%{
+   	left: -100%;
+   }
+
+	45%{
+		left: -200%;
+	}
+	65%{
+		left: -200%;
+	}
+	75%{
+		left: -300%;
+	}
+	90%{
+		left: -300%;
+	}
+
+}
+
+
+.bio{
+	text-align: center;
+	font-size: 30px;
+	letter-spacing: 1.0rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	margin: 15px;
+
+
+}
+.data{
+	width: 90%;
+	min-height: 410px;
+	margin: 40px auto;
+	border: 2px solid black;
+	line-height: 2.0rem;
+	font-weight: 300;
+	padding: 10px;
+	box-shadow: 5px 5px 10px grey;
+	background: black;
+    color: #fff;
+
+}
+.wrap{
+	width: 100%;
+	display: flex;
+	justify-content:space-around;
+
+}
+.card{
+	float: left;
+	width: 290px;
+	min-height: 310px;
+	color: white;
+	background: linear-gradient(blue,white);
+	position: relative;
+	left: 14%;
+	top: 60%;
+	transform: translate(-60%, -5%);
+	overflow: hidden;
+	
+}
+.avatar {
+	
+	text-align: center;
+   
+
+}
+.card p{
+	font-size: 20px;
+	text-align: center;
+	line-height: 1.5rem;
+	padding: 10px;
+	background: ;
+
+}
+.card i{
+	
+text-align:center;
+	color: white;
+	border-radius: 50%;
+	padding: 12px;
+	font-size: 35px;
+	cursor: pointer;
+	padding-left: 20px;
+	margin: 14px;
+
+}
+
+
+.card i:hover{
+	color:#0084ff ;
+	font-size: 45px;
+	
+
+}
+.form{
+
+	width: 100%;
+	height: 300px;
+	background:black ; 
+	color: white;
+	margin-top: 20px ;
+	
+}
+.form div{
+	padding-bottom: 10px;
+}
+.form label{
+	display: block;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+.form label::after{
+	content: "*";
+	font-size: 20px;
+}
+.form input{
+	width:65%;
+	border: none;
+	outline: none;
+	border-bottom: 2px solid  #00ffff;
+	background: none;
+	text-transform: capitalize;
+	color:#00ff99 ;
+	font-size: 23px;
+}
+.form button{
+	margin-top: 5px;
+    padding: 10px;
+	background: linear-gradient(to right,blue,white);
+	font-size: 20px;
+	color: white;
+	text-transform: capitalize;
+	border-radius: 10px;
+	outline: none;
+	border: none;
+
+}
+.form button:hover{
+	background: linear-gradient(to right,white,blue);
+}
+.footer{
+	width: 100%;
+	height: 40px;
+	background:  #002b80;
+	color: white;
+	text-align: right;
+	margin-top: 10px;
+}
+.footer h2{
+	font-size: 20px;
+	text-transform: uppercase;
+}
